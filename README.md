@@ -1,7 +1,7 @@
 ftpSync
 =======
 
-an Android App for ftp uploading and downloading 
+an Android App for ftp uploading and downloading
 
 TODO list:
 
