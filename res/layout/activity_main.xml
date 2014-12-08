@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/host_textview"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="host" />
+        
+       	<EditText
+	        android:id="@+id/host_edittext"
+	        android:layout_width="0dp"
+	        android:layout_weight="3"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="192.168.1.107" />
+       	
+    </LinearLayout>
+
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/port_textview"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="port" />
+        
+       	<EditText
+	        android:id="@+id/port_edittext"
+	        android:layout_width="0dp"
+	        android:layout_weight="3"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+            android:text="21" />
+       	
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/username_textview"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="username" />
+        
+       	<EditText
+	        android:id="@+id/username_edittext"
+	        android:layout_width="0dp"
+	        android:layout_weight="3"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="young" />
+       	
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/password_textview"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="password" />
+        
+       	<EditText
+	        android:id="@+id/password_edittext"
+	        android:layout_width="0dp"
+	        android:layout_weight="3"
+	        android:layout_height="wrap_content"
+	        android:gravity="center" />
+       	
+    </LinearLayout>
+    
+	<Button
+        android:id="@+id/connect_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="connect" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <Button
+	        android:id="@+id/select_button"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="select" />
+        
+        <Button
+            android:id="@+id/upload_button"
+            android:layout_width="0dp"
+           	android:layout_weight="1"
+           	android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="upload" />
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/path_textview"
+    	android:layout_width="match_parent"
+    	android:layout_height="40sp"
+    	android:gravity="center"
+    	android:text="(none)" />
+       
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+	  	<ImageView
+	        android:id="@+id/selimg_imageview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	  	
+	  </LinearLayout>
+
+</LinearLayout>
