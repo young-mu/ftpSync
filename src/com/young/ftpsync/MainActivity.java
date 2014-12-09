@@ -72,7 +72,9 @@ public class MainActivity extends Activity implements OnClickListener {
     protected void onDestroy() {
         super.onDestroy();
         try {
-            ftpClient.disconnect();
+            if (ftpClient != null) {
+                ftpClient.disconnect();
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
